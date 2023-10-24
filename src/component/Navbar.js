@@ -120,7 +120,7 @@ const Navbar = () => {
                                 </MenuItem>
                           
                                 <MenuItem  onClick={handleCloseNavMenu}>
-                                <Typography textAlign="center"><Link style={{ textDecoration: "none", color: palette.secondary.main, fontFamily: 'Montserrat, sans-serif' }} to="/login">Log In</Link></Typography>
+                                <Typography textAlign="center"><Link style={{ textDecoration: "none", color: palette.secondary.main, fontFamily: 'Montserrat, sans-serif' }} to="/register">Sign up</Link></Typography>
                                 </MenuItem>
                               
                         </Menu>
