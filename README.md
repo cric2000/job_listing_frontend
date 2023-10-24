@@ -25,6 +25,20 @@ Navigate to the project directory and install the required dependencies using np
 ```sh
 npm install
 ```
+### Setting up Proxy URL in `package.json`
+
+To ensure proper communication with the [backend service](https://github.com/cric2000/job_listing_api), you need to specify the proxy URL within your `package.json` file. This URL should point to the location where the backend service is hosted.
+
+Here's how you can do it:
+
+1. Open your `package.json` file in your project's root directory.
+
+2. Locate the `"proxy"` key, and add the URL of the backend service as its value. It should look something like this:
+
+   ```json
+   "proxy": "http://your-backend-service-url"
+
+
 ### Start the Application
 
 After installing the dependencies, start the application with the following command:
