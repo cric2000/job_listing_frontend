@@ -114,11 +114,15 @@ const Navbar = () => {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+
+<MenuItem  onClick={handleCloseNavMenu}>
+                                <Typography textAlign="center"><Link style={{ textDecoration: "none", color: palette.secondary.main, fontFamily: 'Montserrat, sans-serif' }} to="/">Home</Link></Typography>
                                 </MenuItem>
-                            ))}
+                          
+                                <MenuItem  onClick={handleCloseNavMenu}>
+                                <Typography textAlign="center"><Link style={{ textDecoration: "none", color: palette.secondary.main, fontFamily: 'Montserrat, sans-serif' }} to="/login">Log In</Link></Typography>
+                                </MenuItem>
+                              
                         </Menu>
                     </Box>
                     <WorkIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
