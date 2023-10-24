@@ -91,7 +91,7 @@ const Home = () => {
         <LoadingBox />
       </div>
     ) : (
-      jobs && jobs.length === 0 ? (
+      (jobs && jobs.length === 0) || !jobs ? (
         <>
           <Box
             sx={{
@@ -101,7 +101,7 @@ const Home = () => {
               alignItems: 'center'
             }}
           >
-            <h2 className='no-data' style={{ fontFamily: 'Montserrat, sans-serif', fontSize:'20px' }}>
+            <h2 className='no-data' style={{ fontFamily: 'Montserrat, sans-serif', fontSize:'20px', color:'#454545' }}>
               Currently, there are no job openings available.
             </h2>
           </Box>
